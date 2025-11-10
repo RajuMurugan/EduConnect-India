@@ -1,6 +1,27 @@
-
 const iiits = [
-  {name:'Indian Institute of Information Technology, Allahabad', type:'IIIT', state:'Uttar Pradesh', city:'Prayagraj', website:'https://www.iiita.ac.in'},
-  {name:'IIIT Design & Manufacturing, Kancheepuram', type:'IIIT', state:'Tamil Nadu', city:'Kancheepuram', website:'https://www.iiitdm.ac.in'},
-  {name:'Indian Institute of Information Technology, Guwahati', type:'IIIT', state:'Assam', city:'Guwahati', website:'https://www.iiitg.ac.in'}
+  {id:1,name:'Atal Bihari Vajpayee Indian Institute of Information Technology & Management, Gwalior',type:'IIIT',state:'Madhya Pradesh',city:'Gwalior',website:'https://www.iiitm.ac.in/index.php/en/'},
+  {id:2,name:'Indian Institute of Information Technology, Allahabad',type:'IIIT',state:'Uttar Pradesh',city:'Prayagraj',website:'https://www.iiita.ac.in/'},
+  {id:3,name:'Indian Institute of Information Technology, Design & Manufacturing, Jabalpur',type:'IIIT',state:'Madhya Pradesh',city:'Jabalpur',website:'https://iiitdmj.ac.in/'},
+  {id:4,name:'Indian Institute of Information Technology, Design & Manufacturing, Kancheepuram',type:'IIIT',state:'Tamil Nadu',city:'Kancheepuram',website:'https://www.iiitdm.ac.in/'},
+  {id:5,name:'Indian Institute of Information Technology, Sri City (Chittoor)',type:'IIIT',state:'Andhra Pradesh',city:'Sri City',website:'https://www.iiits.ac.in/'},
+  {id:6,name:'Indian Institute of Information Technology, Guwahati',type:'IIIT',state:'Assam',city:'Guwahati',website:'https://www.iiitg.ac.in/'},
+  {id:7,name:'Indian Institute of Information Technology, Vadodara',type:'IIIT',state:'Gujarat',city:'Vadodara',website:'https://iiitvadodara.ac.in/'},
+  {id:8,name:'Indian Institute of Information Technology, Kota',type:'IIIT',state:'Rajasthan',city:'Kota',website:'https://iiitkota.ac.in/'},
+  {id:9,name:'Indian Institute of Information Technology, Tiruchirappalli',type:'IIIT',state:'Tamil Nadu',city:'Tiruchirappalli',website:'https://www.iiitt.ac.in/'},
+  {id:10,name:'Indian Institute of Information Technology, Dharwad',type:'IIIT',state:'Karnataka',city:'Dharwad',website:'https://www.iiitdwd.ac.in/'},
+  {id:11,name:'Indian Institute of Information Technology, Una',type:'IIIT',state:'Himachal Pradesh',city:'Una',website:'https://www.iiitu.ac.in/'},
+  {id:12,name:'Indian Institute of Information Technology, Sonepat',type:'IIIT',state:'Haryana',city:'Sonepat',website:'https://www.iiitsonepat.ac.in/'},
+  {id:13,name:'Indian Institute of Information Technology, Kalyani',type:'IIIT',state:'West Bengal',city:'Kalyani',website:'https://www.iiitkalyani.ac.in/'},
+  {id:14,name:'Indian Institute of Information Technology, Lucknow',type:'IIIT',state:'Uttar Pradesh',city:'Lucknow',website:'https://www.iiitl.ac.in/'},
+  {id:15,name:'Indian Institute of Information Technology, Design & Manufacturing, Kurnool',type:'IIIT',state:'Andhra Pradesh',city:'Kurnool',website:'https://www.iiitk.ac.in/'},
+  {id:16,name:'Indian Institute of Information Technology, Kottayam',type:'IIIT',state:'Kerala',city:'Kottayam',website:'https://www.iiitkottayam.ac.in/'},
+  {id:17,name:'Indian Institute of Information Technology, Manipur',type:'IIIT',state:'Manipur',city:'Imphal',website:'https://www.iiitmanipur.ac.in/'},
+  {id:18,name:'Indian Institute of Information Technology, Nagpur',type:'IIIT',state:'Maharashtra',city:'Nagpur',website:'https://www.iiitn.ac.in/'},
+  {id:19,name:'Indian Institute of Information Technology, Pune',type:'IIIT',state:'Maharashtra',city:'Pune',website:'https://iiitp.ac.in/'},
+  {id:20,name:'Indian Institute of Information Technology, Ranchi',type:'IIIT',state:'Jharkhand',city:'Ranchi',website:'https://www.iiitranchi.ac.in/'},
+  {id:21,name:'Indian Institute of Information Technology, Surat',type:'IIIT',state:'Gujarat',city:'Surat',website:'https://www.iiitsurat.ac.in/'},
+  {id:22,name:'Indian Institute of Information Technology, Bhopal',type:'IIIT',state:'Madhya Pradesh',city:'Bhopal',website:'https://www.iiitbhopal.ac.in/'},
+  {id:23,name:'Indian Institute of Information Technology, Bhagalpur',type:'IIIT',state:'Bihar',city:'Bhagalpur',website:'https://www.iiitbh.ac.in/'},
+  {id:24,name:'Indian Institute of Information Technology, Agartala',type:'IIIT',state:'Tripura',city:'Agartala',website:'https://www.iiitagartala.ac.in/'},
+  {id:25,name:'Indian Institute of Information Technology, Raichur',type:'IIIT',state:'Karnataka',city:'Raichur',website:'https://www.iiitr.ac.in/'}
 ];
