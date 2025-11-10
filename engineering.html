@@ -1,137 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Engineering Institutions — EduConnect India</title>
-<meta name="description" content="Explore India's top engineering institutions — IITs, NITs, IIITs, CFTIs, Deemed and State Universities with NIRF Rankings.">
-<link rel="icon" href="favicon.png" type="image/png">
-
-<style>
-  :root {
-    --bg: #f9fafb;
-    --text: #111827;
-    --accent: #0d9488;
-    --card-bg: #ffffff;
-    --shadow: rgba(0,0,0,0.08);
-  }
-
-  body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-  }
-
-  .wrap {
-    max-width: 1100px;
-    margin: auto;
-    padding: 1.5rem;
-  }
-
-  header {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-
-  .logo {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--accent);
-  }
-
-  .subtitle {
-    color: #374151;
-    font-size: 0.95rem;
-  }
-
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-  }
-
-  .controls input,
-  .controls select {
-    padding: 0.6rem 0.8rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.5rem;
-    font-size: 0.95rem;
-    flex: 1;
-    max-width: 300px;
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-  }
-
-  .category {
-    grid-column: 1 / -1;
-    margin-top: 2rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--accent);
-    border-bottom: 2px solid var(--accent);
-    padding-bottom: 0.3rem;
-  }
-
-  .card {
-    background: var(--card-bg);
-    border-radius: 0.75rem;
-    padding: 1rem;
-    box-shadow: 0 1px 4px var(--shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 10px var(--shadow);
-  }
-
-  .card h3 {
-    margin: 0 0 0.4rem;
-    font-size: 1.05rem;
-    color: var(--accent);
-  }
-
-  .card p {
-    margin: 0.25rem 0;
-    font-size: 0.9rem;
-    color: #4b5563;
-  }
-
-  footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #e5e7eb;
-  }
-
-  .back {
-    text-decoration: none;
-    color: var(--accent);
-    font-weight: 600;
-  }
-
-  .back:hover {
-    text-decoration: underline;
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Engineering Institutions — EduConnect</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="wrap">
     <header>
       <div class="logo">🏗 Engineering — EduConnect</div>
-      <div class="subtitle">NIRF Rankings • IITs • NITs • IIITs • CFTIs • Deemed • State Universities</div>
+      <div class="subtitle">
+        NIRF Rankings, IITs, NITs, IIITs, CFTIs, Deemed & State Universities
+      </div>
     </header>
 
     <div class="controls">
-      <input id="searchInput" placeholder="🔍 Search institutions, cities, or states...">
-      <select id="stateFilter"><option value="all">All States</option></select>
+      <input id="searchInput" placeholder="Search institutions, cities, states...">
+      <select id="stateFilter">
+        <option value="all">All States</option>
+      </select>
     </div>
 
     <main id="contentArea"></main>
@@ -141,7 +29,7 @@
     </footer>
   </div>
 
-  <!-- Data Sources -->
+  <!-- Data sources -->
   <script src="data/nirfEngineering.js"></script>
   <script src="data/iit.js"></script>
   <script src="data/nit.js"></script>
@@ -153,8 +41,6 @@
 
   <script>
     const content = document.getElementById('contentArea');
-    const searchInput = document.getElementById('searchInput');
-    const stateFilter = document.getElementById('stateFilter');
 
     const engineeringData = [
       ...nirfEngineering,
@@ -166,28 +52,20 @@
       ...stateUniversities
     ];
 
-    // Initialize filters and render
     hydrateFilters(engineeringData);
 
     const categories = [
-      { key:'Engineering-Rankings', title:'🏆 NIRF 2025 Engineering Rankings' },
-      { key:'IIT', title:'Indian Institutes of Technology (IITs)' },
-      { key:'NIT', title:'National Institutes of Technology (NITs)' },
-      { key:'IIIT', title:'Indian Institutes of Information Technology (IIITs)' },
-      { key:'CFTI', title:'Centrally Funded Technical Institutes (CFTIs)' },
-      { key:'Deemed', title:'Deemed Universities' },
-      { key:'State-University', title:'State Universities' },
+      { key: 'Engineering-Rankings', title: '🏆 NIRF 2025 Engineering Rankings' },
+      { key: 'IIT', title: 'Indian Institutes of Technology (IITs)' },
+      { key: 'NIT', title: 'National Institutes of Technology (NITs)' },
+      { key: 'IIIT', title: 'Indian Institutes of Information Technology (IIITs)' },
+      { key: 'CFTI', title: 'Centrally Funded Technical Institutes (CFTIs)' },
+      { key: 'Deemed', title: 'Deemed Universities' },
+      { key: 'State-University', title: 'State Universities' },
     ];
 
     renderByCategories(content, engineeringData, categories);
     makeFilterHandlers(engineeringData, categories, content);
-
-    // Add "Enter" key support for search
-    searchInput.addEventListener('keypress', e => {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-      }
-    });
   </script>
 </body>
 </html>
