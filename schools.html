@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Schools — EduConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">🏫 Schools — EduConnect</div>
+      <div class="subtitle">Selected schools directory (demo)</div>
+    </header>
+    <div class="controls">
+      <input id="searchInput" placeholder="Search schools, cities, states...">
+      <select id="stateFilter"><option value="all">All States</option></select>
+    </div>
+    <main id="contentArea"></main>
+    <footer><a class="back" href="index.html">← Back to Home</a></footer>
+  </div>
+  <script src="data/schools.js"></script>
+  <script src="data/common.js"></script>
+  <script>
+    const content = document.getElementById('contentArea');
+    const list = [...schools];
+    hydrateFilters(list);
+    const categories = [{key:'School', title:'Schools'}];
+    renderByCategories(content, list, categories);
+    makeFilterHandlers(list, categories, content);
+  </script>
+</body>
+</html>

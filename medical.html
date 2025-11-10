@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medical Institutions — EduConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">🏥 Medical — EduConnect</div>
+      <div class="subtitle">AIIMS and other major medical institutions</div>
+    </header>
+    <div class="controls">
+      <input id="searchInput" placeholder="Search institutions, cities, states...">
+      <select id="stateFilter"><option value="all">All States</option></select>
+      <select id="typeFilter"><option value="all">All Types</option></select>
+    </div>
+    <main id="contentArea"></main>
+    <footer><a class="back" href="index.html">← Back to Home</a></footer>
+  </div>
+  <script src="data/aiims.js"></script>
+  <script src="data/common.js"></script>
+  <script>
+    const content = document.getElementById('contentArea');
+    const list = [...aiims];
+    hydrateFilters(list, true);
+    const categories = [
+      {key:'AIIMS', title:'All India Institutes of Medical Sciences (AIIMS)'}
+    ];
+    renderByCategories(content, list, categories);
+    makeFilterHandlers(list, categories, content);
+  </script>
+</body>
+</html>

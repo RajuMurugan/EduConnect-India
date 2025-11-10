@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Universities — EduConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">🎓 Universities — EduConnect</div>
+      <div class="subtitle">Central, Deemed, State Universities and Institutes</div>
+    </header>
+    <div class="controls">
+      <input id="searchInput" placeholder="Search institutions, cities, states...">
+      <select id="stateFilter"><option value="all">All States</option></select>
+      <select id="typeFilter"><option value="all">All Types</option></select>
+    </div>
+    <main id="contentArea"></main>
+    <footer><a class="back" href="index.html">← Back to Home</a></footer>
+  </div>
+  <script src="data/deemed.js"></script>
+  <script src="data/state_universities.js"></script>
+  <script src="data/universities.js"></script>
+  <script src="data/common.js"></script>
+  <script>
+    const content = document.getElementById('contentArea');
+    const list = [...deemedUniversities, ...stateUniversities, ...centralUniversities];
+    hydrateFilters(list, true);
+    const categories = [
+      {key:'Deemed', title:'Deemed Universities'},
+      {key:'State-University', title:'State Universities'},
+      {key:'Central-University', title:'Central Universities'}
+    ];
+    renderByCategories(content, list, categories);
+    makeFilterHandlers(list, categories, content);
+  </script>
+</body>
+</html>

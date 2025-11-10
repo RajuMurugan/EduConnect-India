@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Engineering Institutions — EduConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">🏗 Engineering — EduConnect</div>
+      <div class="subtitle">NIRF Rankings, IITs, NITs, IIITs, CFTIs, Deemed & State Universities</div>
+    </header>
+    <div class="controls">
+      <input id="searchInput" placeholder="Search institutions, cities, states...">
+      <select id="stateFilter"><option value="all">All States</option></select>
+    </div>
+    <main id="contentArea"></main>
+    <footer><a class="back" href="index.html">← Back to Home</a></footer>
+  </div>
+
+  <!-- Data sources -->
+  <script src="data/nirfEngineering.js"></script>
+  <script src="data/iit.js"></script>
+  <script src="data/nit.js"></script>
+  <script src="data/iiit.js"></script>
+  <script src="data/cfti.js"></script>
+  <script src="data/deemed.js"></script>
+  <script src="data/state_universities.js"></script>
+  <script src="data/common.js"></script>
+  <script>
+    const content = document.getElementById('contentArea');
+    const engineeringData = [
+      ...nirfEngineering, ...iits, ...nits, ...iiits, ...cftis, ...deemedUniversities, ...stateUniversities
+    ];
+    hydrateFilters(engineeringData);
+
+    const categories = [
+      { key:'Engineering-Rankings', title:'🏆 NIRF 2025 Engineering Rankings' },
+      { key:'IIT', title:'Indian Institutes of Technology (IITs)' },
+      { key:'NIT', title:'National Institutes of Technology (NITs)' },
+      { key:'IIIT', title:'Indian Institutes of Information Technology (IIITs)' },
+      { key:'CFTI', title:'Centrally Funded Technical Institutes (CFTIs)' },
+      { key:'Deemed', title:'Deemed Universities' },
+      { key:'State-University', title:'State Universities' },
+    ];
+
+    renderByCategories(content, engineeringData, categories);
+    makeFilterHandlers(engineeringData, categories, content);
+  </script>
+</body>
+</html>
