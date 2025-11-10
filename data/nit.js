@@ -1,7 +1,33 @@
-
 const nits = [
-  {name:'National Institute of Technology Tiruchirappalli', type:'NIT', state:'Tamil Nadu', city:'Tiruchirappalli', website:'https://www.nitt.edu'},
-  {name:'National Institute of Technology Warangal', type:'NIT', state:'Telangana', city:'Warangal', website:'https://www.nitw.ac.in'},
-  {name:'National Institute of Technology Karnataka, Surathkal', type:'NIT', state:'Karnataka', city:'Surathkal', website:'https://www.nitk.ac.in'},
-  {name:'National Institute of Technology Rourkela', type:'NIT', state:'Odisha', city:'Rourkela', website:'https://www.nitrkl.ac.in'}
+  {id:101,name:'National Institute of Technology, Tiruchirappalli',type:'NIT',state:'Tamil Nadu',city:'Tiruchirappalli',website:'https://www.nitt.edu'},
+  {id:102,name:'National Institute of Technology, Warangal',type:'NIT',state:'Telangana',city:'Warangal',website:'https://www.nitw.ac.in'},
+  {id:103,name:'National Institute of Technology Karnataka, Surathkal',type:'NIT',state:'Karnataka',city:'Mangalore',website:'https://www.nitk.ac.in'},
+  {id:104,name:'Maulana Azad National Institute of Technology, Bhopal',type:'NIT',state:'Madhya Pradesh',city:'Bhopal',website:'https://www.manit.ac.in'},
+  {id:105,name:'National Institute of Technology, Calicut',type:'NIT',state:'Kerala',city:'Kozhikode',website:'https://www.nitc.ac.in'},
+  {id:106,name:'National Institute of Technology, Rourkela',type:'NIT',state:'Odisha',city:'Rourkela',website:'https://www.nitrkl.ac.in'},
+  {id:107,name:'National Institute of Technology, Durgapur',type:'NIT',state:'West Bengal',city:'Durgapur',website:'https://www.nitdgp.ac.in'},
+  {id:108,name:'National Institute of Technology, Jamshedpur',type:'NIT',state:'Jharkhand',city:'Jamshedpur',website:'https://www.nitjsr.ac.in'},
+  {id:109,name:'National Institute of Technology, Kurukshetra',type:'NIT',state:'Haryana',city:'Kurukshetra',website:'https://www.nitkkr.ac.in'},
+  {id:110,name:'National Institute of Technology, Silchar',type:'NIT',state:'Assam',city:'Silchar',website:'https://www.nits.ac.in'},
+  {id:111,name:'National Institute of Technology, Hamirpur',type:'NIT',state:'Himachal Pradesh',city:'Hamirpur',website:'https://www.nith.ac.in'},
+  {id:112,name:'National Institute of Technology, Srinagar',type:'NIT',state:'Jammu and Kashmir',city:'Srinagar',website:'https://www.nitsri.ac.in'},
+  {id:113,name:'Malaviya National Institute of Technology, Jaipur',type:'NIT',state:'Rajasthan',city:'Jaipur',website:'https://www.mnit.ac.in'},
+  {id:114,name:'Dr. B. R. Ambedkar National Institute of Technology, Jalandhar',type:'NIT',state:'Punjab',city:'Jalandhar',website:'https://www.nitj.ac.in'},
+  {id:115,name:'Visvesvaraya National Institute of Technology, Nagpur',type:'NIT',state:'Maharashtra',city:'Nagpur',website:'https://www.vnit.ac.in'},
+  {id:116,name:'National Institute of Technology, Meghalaya',type:'NIT',state:'Meghalaya',city:'Shillong',website:'https://www.nitm.ac.in'},
+  {id:117,name:'National Institute of Technology, Agartala',type:'NIT',state:'Tripura',city:'Agartala',website:'https://www.nita.ac.in'},
+  {id:118,name:'National Institute of Technology, Arunachal Pradesh',type:'NIT',state:'Arunachal Pradesh',city:'Yupia',website:'https://www.nitap.ac.in'},
+  {id:119,name:'National Institute of Technology, Delhi',type:'NIT',state:'Delhi',city:'New Delhi',website:'https://nitdelhi.ac.in'},
+  {id:120,name:'National Institute of Technology, Goa',type:'NIT',state:'Goa',city:'Ponda',website:'https://www.nitgoa.ac.in'},
+  {id:121,name:'National Institute of Technology, Manipur',type:'NIT',state:'Manipur',city:'Imphal',website:'https://www.nitmanipur.ac.in'},
+  {id:122,name:'National Institute of Technology, Mizoram',type:'NIT',state:'Mizoram',city:'Aizawl',website:'https://www.nitmz.ac.in'},
+  {id:123,name:'National Institute of Technology, Nagaland',type:'NIT',state:'Nagaland',city:'Dimapur',website:'https://www.nitnagaland.ac.in'},
+  {id:124,name:'National Institute of Technology, Patna',type:'NIT',state:'Bihar',city:'Patna',website:'https://www.nitp.ac.in'},
+  {id:125,name:'National Institute of Technology, Puducherry',type:'NIT',state:'Puducherry',city:'Karaikal',website:'https://www.nitpy.ac.in'},
+  {id:126,name:'National Institute of Technology, Raipur',type:'NIT',state:'Chhattisgarh',city:'Raipur',website:'https://www.nitrr.ac.in'},
+  {id:127,name:'National Institute of Technology, Sikkim',type:'NIT',state:'Sikkim',city:'Ravangla',website:'https://www.nitsikkim.ac.in'},
+  {id:128,name:'National Institute of Technology, Uttarakhand',type:'NIT',state:'Uttarakhand',city:'Srinagar (Garhwal)',website:'https://www.nituk.ac.in'},
+  {id:129,name:'National Institute of Technology, Andhra Pradesh',type:'NIT',state:'Andhra Pradesh',city:'Tadepalligudem',website:'https://www.nitandhra.ac.in'},
+  {id:130,name:'National Institute of Technology, Tadepalligudem',type:'NIT',state:'Andhra Pradesh',city:'Tadepalligudem',website:'https://www.nitandhra.ac.in'}, // alias entry
+  {id:131,name:'National Institute of Technology, Ladakh',type:'NIT',state:'Ladakh',city:'Leh',website:'https://www.nitladakh.ac.in'}
 ];
