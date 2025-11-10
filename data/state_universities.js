@@ -1,4 +1,3 @@
-
 const stateUniversities = [
   // ANDHRA PRADESH
   {name:'Jawaharlal Nehru Technological University, Anantapur (JNTUA)', type:'State University', state:'Andhra Pradesh', city:'Anantapur', website:'https://www.jntua.ac.in'},
@@ -105,8 +104,5 @@ const stateUniversities = [
   {name:'Guru Gobind Singh Indraprastha University (GGSIPU)', type:'State University', state:'Delhi', city:'New Delhi', website:'https://www.ipu.ac.in'},
 
   // PUDUCHERRY (UT)
-  {name:'Puducherry Technological University (PTU)', type:'State University', state:'Puducherry', city:'Puducherry', website:'https://ptu.edu.in'},
-
-  // UTTARAKHAND/HP/NE small or special-focus additions (where engineering presence is notable)
-  // (Already covered above for these states)
+  {name:'Puducherry Technological University (PTU)', type:'State University', state:'Puducherry', city:'Puducherry', website:'https://ptu.edu.in'}
 ];
