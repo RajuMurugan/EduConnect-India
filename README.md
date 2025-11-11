@@ -1,1 +1,1 @@
-# EduConnect-India2
+# EduConnect-India
